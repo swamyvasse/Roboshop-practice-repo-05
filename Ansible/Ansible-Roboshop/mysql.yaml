@@ -21,8 +21,6 @@
         state: started
         enabled: yes
 
-    - name: create rabbitmq roboshop user
+    - name: create rabbitmq roboshop password
       ansible.builtin.command: mysql_secure_installation --set-root-pass RoboShop@1
     
-    - name: Setup Permissions
-      ansible.builtin.command: mysql -uroot -pRoboShop@1
